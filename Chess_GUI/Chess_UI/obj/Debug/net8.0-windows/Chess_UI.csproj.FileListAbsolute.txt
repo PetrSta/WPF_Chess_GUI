@@ -1,0 +1,48 @@
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_UI.exe
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_UI.deps.json
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_UI.runtimeconfig.json
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_UI.dll
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_UI.pdb
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_Logic.dll
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_Logic.pdb
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.csproj.AssemblyReference.cache
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI_MarkupCompile.cache
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI_MarkupCompile.lref
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.g.resources
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.AssemblyInfoInputs.cache
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.AssemblyInfo.cs
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.csproj.CoreCompileInputs.cache
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.csproj.Up2Date
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.dll
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\refint\Chess_UI.dll
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.pdb
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.genruntimeconfig.cache
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\ref\Chess_UI.dll
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_UI.exe
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_UI.deps.json
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_UI.runtimeconfig.json
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_UI.dll
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_UI.pdb
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_Logic.dll
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\bin\Debug\net8.0-windows\Chess_Logic.pdb
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.csproj.AssemblyReference.cache
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI_MarkupCompile.cache
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI_MarkupCompile.lref
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.g.resources
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.AssemblyInfoInputs.cache
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.AssemblyInfo.cs
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.csproj.CoreCompileInputs.cache
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.csproj.Up2Date
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.dll
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\refint\Chess_UI.dll
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.pdb
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\Chess_UI.genruntimeconfig.cache
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\ref\Chess_UI.dll

@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Bishop_B.png" />
+    <None Remove="Assets\Black\Bishop.png" />
+    <None Remove="Assets\Black\King.png" />
+    <None Remove="Assets\Black\Knight.png" />
+    <None Remove="Assets\Black\Pawn.png" />
+    <None Remove="Assets\Black\Queen.png" />
+    <None Remove="Assets\Black\Rook.png" />
+    <None Remove="Assets\Chessboard.png" />
+    <None Remove="Assets\Chessboard_W_Bottom.png" />
+    <None Remove="Assets\Icon.ico" />
+    <None Remove="Assets\King_B.png" />
+    <None Remove="Assets\King_W.png" />
+    <None Remove="Assets\Knight_Left_B.png" />
+    <None Remove="Assets\Knight_Left_W.png" />
+    <None Remove="Assets\Knight_Right_B.png" />
+    <None Remove="Assets\Knight_Right_W.png" />
+    <None Remove="Assets\Pawn_B.png" />
+    <None Remove="Assets\Pawn_W.png" />
+    <None Remove="Assets\Queen_B.png" />
+    <None Remove="Assets\Queen_W.png" />
+    <None Remove="Assets\Rook_B.png" />
+    <None Remove="Assets\Rook_W.png" />
+    <None Remove="Assets\White\Bishop.png" />
+    <None Remove="Assets\White\King.png" />
+    <None Remove="Assets\White\Knight.png" />
+    <None Remove="Assets\White\Pawn.png" />
+    <None Remove="Assets\White\Queen.png" />
+    <None Remove="Assets\White\Rook.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chess_Logic\Chess_Logic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Black\Bishop.png" />
+    <Resource Include="Assets\Black\King.png" />
+    <Resource Include="Assets\Black\Knight.png" />
+    <Resource Include="Assets\Black\Pawn.png" />
+    <Resource Include="Assets\Black\Queen.png" />
+    <Resource Include="Assets\Black\Rook.png" />
+    <Resource Include="Assets\Chessboard_W_Bottom.png" />
+    <Resource Include="Assets\Icon.ico" />
+    <Resource Include="Assets\White\Bishop.png" />
+    <Resource Include="Assets\White\King.png" />
+    <Resource Include="Assets\White\Knight.png" />
+    <Resource Include="Assets\White\Pawn.png" />
+    <Resource Include="Assets\White\Queen.png" />
+    <Resource Include="Assets\White\Rook.png" />
+  </ItemGroup>
+
+</Project>

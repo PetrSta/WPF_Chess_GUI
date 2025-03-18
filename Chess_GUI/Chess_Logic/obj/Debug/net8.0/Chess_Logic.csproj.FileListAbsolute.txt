@@ -1,0 +1,22 @@
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_Logic\bin\Debug\net8.0\Chess_Logic.deps.json
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_Logic\bin\Debug\net8.0\Chess_Logic.dll
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_Logic\bin\Debug\net8.0\Chess_Logic.pdb
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.AssemblyInfoInputs.cache
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.AssemblyInfo.cs
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.csproj.CoreCompileInputs.cache
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.dll
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\refint\Chess_Logic.dll
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.pdb
+C:\Users\Petr\Documents\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\ref\Chess_Logic.dll
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_Logic\bin\Debug\net8.0\Chess_Logic.deps.json
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_Logic\bin\Debug\net8.0\Chess_Logic.dll
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_Logic\bin\Debug\net8.0\Chess_Logic.pdb
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.AssemblyInfoInputs.cache
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.AssemblyInfo.cs
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.csproj.CoreCompileInputs.cache
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.dll
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\refint\Chess_Logic.dll
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\Chess_Logic.pdb
+C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Debug\net8.0\ref\Chess_Logic.dll
