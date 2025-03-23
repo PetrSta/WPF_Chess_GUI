@@ -3,7 +3,6 @@
 This repository was created for my Chess_GUI project based on youtube tutorial: https://www.youtube.com/playlist?list=PLFk1_lkqT8MahHPi40ON-jyo5wiqnyHsL.<br>
 My goal for this project is to finish all functionalities shown in the tutorial using my own coding style, and to add more.<br>
 Currently the project is at its beginning.<br>
-There is not anything more at the moment to say. Later on I will list the custom functionalities as well as the controls for them.<br>
 </p>
 
 <p>
