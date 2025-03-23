@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\chessboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|c:\\users\\petr\\documents\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\pieces\\pawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\pieces\\pawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|c:\\users\\petr\\documents\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|c:\\users\\petr\\documents\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|c:\\users\\petr\\documents\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\moves\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\moves\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,35 +48,34 @@
               "RelativeDocumentMoniker": "Chess_Logic\\Chessboard.cs",
               "ToolTip": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Chessboard.cs",
               "RelativeToolTip": "Chess_Logic\\Chessboard.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAADwv3AAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T13:38:56.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pawn.cs",
-              "DocumentMoniker": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Pieces\\Pawn.cs",
-              "RelativeDocumentMoniker": "Chess_Logic\\Pieces\\Pawn.cs",
-              "ToolTip": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Pieces\\Pawn.cs",
-              "RelativeToolTip": "Chess_Logic\\Pieces\\Pawn.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T13:38:40.46Z",
+              "WhenOpened": "2025-03-23T14:03:42.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "King.cs",
-              "DocumentMoniker": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Pieces\\King.cs",
-              "RelativeDocumentMoniker": "Chess_Logic\\Pieces\\King.cs",
-              "ToolTip": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Pieces\\King.cs",
-              "RelativeToolTip": "Chess_Logic\\Pieces\\King.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwD4AAAANAAAAAAAAAA==",
+              "Title": "Move.cs",
+              "DocumentMoniker": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Moves\\Move.cs",
+              "RelativeDocumentMoniker": "Chess_Logic\\Moves\\Move.cs",
+              "ToolTip": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Moves\\Move.cs",
+              "RelativeToolTip": "Chess_Logic\\Moves\\Move.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T13:37:41.561Z",
+              "WhenOpened": "2025-03-23T13:45:04.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameState.cs",
+              "DocumentMoniker": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\GameState.cs",
+              "RelativeDocumentMoniker": "Chess_Logic\\GameState.cs",
+              "ToolTip": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\GameState.cs",
+              "RelativeToolTip": "Chess_Logic\\GameState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T13:45:00.117Z",
               "EditorCaption": ""
             }
           ]
