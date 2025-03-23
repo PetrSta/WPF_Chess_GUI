@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\
+C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Debug\net8.0-windows\
 Chess_UI
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Petr\Documents\Pet projects\Chess_GUI\Chess_GUI\Chess_UI\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\App.xaml
 11407045341
 
 7478022827
-199558782798
+199810540766
 MainWindow.xaml;
 
 True

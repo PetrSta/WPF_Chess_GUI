@@ -55,5 +55,15 @@
                 yield return new StandardMove(startingSquare, endingSquare);
             }
         }
+
+        // check for moves that put opponents king in check
+        public override bool ChecksOpponentsKing(Square startingSquare, Chessboard chessboard)
+        {
+            return PossibleSquares(startingSquare, chessboard).Any(endingSquare =>
+            {
+                Piece piece = chessboard[endingSquare];
+                return piece != null && piece.PieceType == PieceEnum.King;
+            });
+        }
     }
 }

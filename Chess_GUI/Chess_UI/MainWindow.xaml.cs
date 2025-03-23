@@ -28,12 +28,12 @@ namespace Chess_UI
         // draw piece assets based on chessboard
         private void DrawBoard(Chessboard chessboard)
         {
-            for (int i = 0; i < 8; i++)
+            for (int row = 0; row < 8; row++)
             {
-                for (int j = 0; j < 8; j++)
+                for (int column = 0; column < 8; column++)
                 {
-                    Piece piece = chessboard[i, j];
-                    pieceImages[i, j].Source = PieceImages.GetImage(piece);
+                    Piece piece = chessboard[row, column];
+                    pieceImages[row, column].Source = PieceImages.GetImage(piece);
                 }
             }
         }
@@ -41,16 +41,16 @@ namespace Chess_UI
         // initialize chessboard
         private void InitializeChessboard()
         {
-            for (int i = 0; i < 8; i++)
+            for (int row = 0; row < 8; row++)
             {
-                for (int j = 0; j < 8; j++)
+                for (int column = 0; column < 8; column++)
                 {
                     Image image = new Image();
-                    pieceImages[i, j] = image;
+                    pieceImages[row, column] = image;
                     PieceGrid.Children.Add(image);
 
                     Rectangle highlight = new Rectangle();
-                    highlights[i, j] = highlight;
+                    highlights[row, column] = highlight;
                     MovesHighlightGrid.Children.Add(highlight);
                 }
             }

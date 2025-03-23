@@ -43,10 +43,10 @@
             this[7, 7] = new Rook(Colors.White);
 
             // pawns
-            for (int i = 0; i < 8; i++)
+            for (int column = 0; column < 8; column++)
             {
-                this[1, i] = new Pawn(Colors.Black);
-                this[6, i] = new Pawn(Colors.White);
+                this[1, column] = new Pawn(Colors.Black);
+                this[6, column] = new Pawn(Colors.White);
             }
         }
 
@@ -68,6 +68,52 @@
         public bool IsEmpty(Square square)
         { 
             return this[square] == null;
+        }
+
+        // return all squares with piece on them
+        public IEnumerable<Square> SquaresWithPiece()
+        {
+            for (int row = 0; row < 8; row++)
+            {
+                for (int column = 0; column < 8; column++)
+                {
+                    Square square = new Square(row, column);
+
+                    if(!IsEmpty(square))
+                    {
+                        yield return square;
+                    }
+                }
+            }
+        }
+
+        // return only squares with piece of given color on them
+        public IEnumerable<Square> SquaresWithPiecesOfColor(Colors color)
+        {
+            return SquaresWithPiece().Where(square => this[square].Color == color);
+        }
+
+        // loop through all of openents pieces and check if any can check our king
+        public bool PlayersKingInCheck(Colors color)
+        {
+            return SquaresWithPiecesOfColor(color.getOpponent()).Any(square =>
+            {
+                Piece piece = this[square];
+                return piece != null && piece.ChecksOpponentsKing(square, this);
+            });
+        }
+
+        // create a copy of the chessboard
+        public Chessboard Copy()
+        {
+            Chessboard chessboardCopy = new Chessboard();
+
+            foreach (Square square in SquaresWithPiece())
+            {
+                chessboardCopy[square] = this[square].Copy();
+            }
+
+            return chessboardCopy;
         }
     }
 }

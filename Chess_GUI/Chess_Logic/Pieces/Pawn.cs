@@ -93,5 +93,15 @@ namespace Chess_Logic
             // TODO pawn promotion, en passant
             return ForwardMoves(startingSquare, chessboard).Concat(CapturingMoves(startingSquare, chessboard));
         }
+
+        // check for moves that put opponents king in check
+        public override bool ChecksOpponentsKing(Square startingSquare, Chessboard chessboard)
+        {
+            return CapturingMoves(startingSquare, chessboard).Any(move =>
+            {
+                Piece piece = chessboard[move.EndingSquare];
+                return piece != null && piece.PieceType == PieceEnum.King;
+            });
+        }
     }
 }

@@ -15,7 +15,9 @@
             }
 
             Piece piece = Chessboard[startingSquare];
-            return piece.GetMoves(startingSquare, Chessboard);
+
+            IEnumerable<Move> potentialMoves = piece.GetMoves(startingSquare, Chessboard);
+            return potentialMoves.Where(move => move.LegalMove(Chessboard));
         }
 
         // execute selected piece move

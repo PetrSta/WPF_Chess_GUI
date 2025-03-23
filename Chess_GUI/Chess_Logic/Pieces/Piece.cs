@@ -39,5 +39,16 @@
         {
             return directions.SelectMany(direction => CheckDirection(startingSquare, chessboard, direction));
         }
+
+        // check for moves that put opponents king in check
+        public virtual bool ChecksOpponentsKing(Square startingSquare, Chessboard chessboard)
+        {
+            return GetMoves(startingSquare, chessboard).Any(move =>
+            {
+                Piece piece = chessboard[move.EndingSquare];
+                return piece != null && piece.PieceType == PieceEnum.King;
+            });
+
+        }
     }
 }
