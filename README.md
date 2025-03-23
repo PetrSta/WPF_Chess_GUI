@@ -3,6 +3,10 @@
 This repository was created for my Chess_GUI project based on youtube tutorial: https://www.youtube.com/playlist?list=PLFk1_lkqT8MahHPi40ON-jyo5wiqnyHsL.<br>
 My goal for this project is to finish all functionalities shown in the tutorial using my own coding style, and to add more.<br>
 Currently the project is at its beginning.<br>
+I would also like to let it be known that the assets were downloaded from:
+https://freesvg.org/simple-chessboard
+https://freesvg.org/chess-pieces-vector
+Afterwards I edited them using gimp, but baseline was downloaded from the above links.
 </p>
 
 <p>
