@@ -169,37 +169,30 @@ namespace Chess_UI
                 }
             } 
             // user highlighting square
-            /*
-             * TODO rework this functionality to be better -> possible move it into a function
-             */
             else
             {
-                // if piece is selected deselect it and hide highlights of possible moves
-                if(selectedSquare != null)
+                // if piece is selected desele ct it and hide highlights of possible moves
+                if (selectedSquare != null)
                 {
                     selectedSquare = null;
                     HideHighlights();
                     possibleMovesCache.Clear();
-                    highlightSquareCache.Add(square);
-                    Color color = Color.FromArgb(135, 255, 55, 55);
-                    highlights[square.Row, square.Column].Fill = new SolidColorBrush(color);
                 }
+
                 // if the square is already highlighted remove the highlight
-                else if(highlightSquareCache.Contains(square))
+                if (highlightSquareCache.Contains(square))
                 {
                     highlights[square.Row, square.Column].Fill = Brushes.Transparent;
                     highlightSquareCache.Remove(square);
                 }
-                // then highlight the square
+                // else highlight the square
                 else
                 {
                     highlightSquareCache.Add(square);
                     Color color = Color.FromArgb(135, 255, 55, 55);
                     highlights[square.Row, square.Column].Fill = new SolidColorBrush(color);
                 }
-                
             }
-            
         }
 
         // further move selections
@@ -220,7 +213,7 @@ namespace Chess_UI
             HandleInput(clickedSquare, true);
         }
 
-        // event handling - mouseRightDown - highlighting - TODO - moving a piece or clicking the same square hides the highlight
+        // event handling - mouseRightDown - highlighting
         private void BoardGrid_RightMouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             // get point in PieceGrid whe MouseButtonEvent happened

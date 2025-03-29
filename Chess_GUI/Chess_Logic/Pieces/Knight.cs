@@ -3,8 +3,9 @@
     // representation of knight
     public class Knight(Colors color) : Piece
     {
-        // varibles
+        // type of the piece
         public override PieceEnum PieceType => PieceEnum.Knight;
+        // color of the piece
         public override Colors Color { get; } = color;
 
         // copy the piece

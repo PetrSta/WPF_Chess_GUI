@@ -3,8 +3,9 @@
     // representation of rook
     public class Rook(Colors color) : Piece
     {
-        // variables
+        // type of the piece
         public override PieceEnum PieceType => PieceEnum.Rook;
+        // color of the piece
         public override Colors Color { get; } = color;
 
         // possible rook move directions

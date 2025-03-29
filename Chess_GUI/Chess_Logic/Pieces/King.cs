@@ -3,10 +3,12 @@
     // representation of king
     public class King(Colors color) : Piece
     {
-        // variables
+        // type of the piece
         public override PieceEnum PieceType => PieceEnum.King;
+        // color of the piece
         public override Colors Color { get; } = color;
 
+        // possible move directions
         private static Direction[] directions = new Direction[]
         {
             Direction.Up,
@@ -39,7 +41,6 @@
                 {
                     continue;
                 }
-                // TODO needs to check if the piece is not protected
                 if (chessboard.IsEmpty(endingSquare) || chessboard[endingSquare].Color != Color)
                 {
                     yield return endingSquare;

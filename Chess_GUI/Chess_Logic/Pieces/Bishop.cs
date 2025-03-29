@@ -3,8 +3,9 @@
     // representation of bishop
     public class Bishop(Colors color) : Piece
     {
-        // variables
+        // type of the piece
         public override PieceEnum PieceType => PieceEnum.Bishop;
+        // color of the piece
         public override Colors Color { get; } = color;
 
         // possible move directions

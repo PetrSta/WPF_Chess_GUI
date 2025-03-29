@@ -3,8 +3,9 @@
     // representation of queen
     public class Queen(Colors color) : Piece
     {
-        // variables
+        // type of the piece
         public override PieceEnum PieceType => PieceEnum.Queen;
+        // color of the piece
         public override Colors Color { get; } = color;
 
         // possible queen move directions

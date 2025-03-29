@@ -17,7 +17,7 @@
         public int RowDelta {  get; } = rowDelta;
         public int ColumnDelta { get; } = columnDelta;
 
-        // overridden operators
+        // overridden operators ( + and * )
         public static Direction operator +(Direction direction1, Direction direction2)
         {
             return new Direction(direction1.RowDelta + direction2.RowDelta, direction1.ColumnDelta + direction2.ColumnDelta);

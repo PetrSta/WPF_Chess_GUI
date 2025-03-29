@@ -11,6 +11,7 @@
         // execute the move
         public abstract void Execute(Chessboard chessboard);
 
+        // check if the move is legal
         public virtual bool LegalMove(Chessboard chessboard)
         {
             Colors playerColor = chessboard[StartingSquare].Color;

@@ -3,9 +3,11 @@
     // standrd move type
     internal class StandardMove(Square startingSquare, Square endingSquare) : Move
     {
-        // variables
+        // move type
         public override MoveTypes MoveTypes => MoveTypes.Standard;
+        // move starting squeare
         public override Square StartingSquare { get; } = startingSquare;
+        // move ending square
         public override Square EndingSquare { get; } = endingSquare;
 
         // execute standard move

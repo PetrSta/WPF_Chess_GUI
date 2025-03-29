@@ -29,12 +29,13 @@
                    Column == square.Column;
         }
 
-
+        // overridon hash code
         public override int GetHashCode()
         {
             return HashCode.Combine(Row, Column); 
         }
 
+        // overriden operators
         public static bool operator ==(Square left, Square right)
         {
             return EqualityComparer<Square>.Default.Equals(left, right);

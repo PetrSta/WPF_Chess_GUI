@@ -5,10 +5,11 @@ namespace Chess_Logic
     // representation of pawn
     public class Pawn : Piece
     {
-        // variables
+        // type of the piece
         public override PieceEnum PieceType => PieceEnum.Pawn;
+        // color of the piece
         public override Colors Color { get; }
-
+        // only direction pawn can move, except taking
         private readonly Direction forward;
 
         // constructor
@@ -35,7 +36,7 @@ namespace Chess_Logic
             return copy;
         }
 
-        // check if pawn can push
+        // check if pawn can push (move forward)
         private static bool CanPush(Square square, Chessboard chessboard) 
         { 
             return Chessboard.IsInBounds(square) && chessboard.IsEmpty(square);
