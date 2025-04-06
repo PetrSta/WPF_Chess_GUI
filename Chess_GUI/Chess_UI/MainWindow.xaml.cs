@@ -131,6 +131,20 @@ namespace Chess_UI
             }
         }
 
+
+        // move the piece
+        private void HandleMove(Move move)
+        {
+            gameState.MovePiece(move);
+            DrawBoard(gameState.Chessboard);
+
+
+            if(gameState.GameOver())
+            {
+                ShowGameEndMenu();
+            }
+        }
+
         // handling of player input
         private void HandleInput(Square square, bool leftClick)
         {
@@ -195,16 +209,14 @@ namespace Chess_UI
             }
         }
 
-        // further move selections
-        private void HandleMove(Move move)
-        {
-            gameState.MovePiece(move);
-            DrawBoard(gameState.Chessboard);
-        }
-
         // event handling - mouseLeftDown   
         private void BoardGrid_LeftMouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+            if (IsGameEndMenuOnScreen())
+            {
+                return;
+            }
+
             // get point in PieceGrid whe MouseButtonEvent happened
             Point point = e.GetPosition(PieceGrid);
             // clicked square of grid
@@ -222,6 +234,41 @@ namespace Chess_UI
             Square squareToHiglight = ToSquarePosition(point);
 
             HandleInput(squareToHiglight, false);
+        }
+
+        // check if game end menu is on screen right now
+        private bool IsGameEndMenuOnScreen()
+        {
+            return GameEndMenuContainer.Content != null;
+        }
+
+        private void RestartGame()
+        {
+            HideHighlights();
+            HideUserHighlights();
+            possibleMovesCache.Clear();
+
+            gameState = new GameState(Chess_Logic.Colors.White, Chessboard.Initialize());
+            DrawBoard(gameState.Chessboard);
+        }
+
+        private void ShowGameEndMenu()
+        {
+            GameEndMenu gameEndMenu = new GameEndMenu(gameState);
+            GameEndMenuContainer.Content = gameEndMenu;
+
+            gameEndMenu.OptionSelected += menuOption =>
+            {
+                if (menuOption == MenuOptions.Restart)
+                {
+                    GameEndMenuContainer.Content = null;
+                    RestartGame();
+                }
+                else
+                {
+                    Application.Current.Shutdown();
+                }
+            };
         }
     }
 }

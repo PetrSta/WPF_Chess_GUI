@@ -23,3 +23,6 @@ C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\ne
 C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\Chess_UI.pdb
 C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\Chess_UI.genruntimeconfig.cache
 C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\ref\Chess_UI.dll
+C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\GameEndMenu.g.cs
+C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\App.baml
+C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\GameEndMenu.baml

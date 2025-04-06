@@ -22,6 +22,9 @@
             <!--grid has to be sized to acount for notation-->
             <UniformGrid x:Name="PieceGrid" Rows="8" Columns="8" 
                          Height="750" Width="750" RenderOptions.BitmapScalingMode="HighQuality"/>
+
+            <ContentControl x:Name="GameEndMenuContainer"></ContentControl>
+            
         </Grid>
     </Viewbox>
     
