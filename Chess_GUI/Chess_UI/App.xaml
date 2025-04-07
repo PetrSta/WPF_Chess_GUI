@@ -5,10 +5,10 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
-        <SolidColorBrush x:Key="StrokeColor">#260000</SolidColorBrush>
-        <SolidColorBrush x:Key="FillColor">#cc380404</SolidColorBrush>
-        <SolidColorBrush x:Key="TextColor">#ffa274</SolidColorBrush>
-        <SolidColorBrush x:Key="ButtonColor">#730909</SolidColorBrush>
+        <SolidColorBrush x:Key="StrokeColor">#200c00</SolidColorBrush>
+        <SolidColorBrush x:Key="FillColor">#cc320c00</SolidColorBrush>
+        <SolidColorBrush x:Key="TextColor">#f3e6cc</SolidColorBrush>
+        <SolidColorBrush x:Key="ButtonColor">#320c00</SolidColorBrush>
 
         <Style TargetType="Border" x:Key="BorderStyle">
             <Setter Property="BorderThickness" Value="4"></Setter>

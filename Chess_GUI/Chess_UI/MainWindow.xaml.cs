@@ -242,6 +242,7 @@ namespace Chess_UI
             return GameEndMenuContainer.Content != null;
         }
 
+        // restart the state of the game
         private void RestartGame()
         {
             HideHighlights();
@@ -252,6 +253,7 @@ namespace Chess_UI
             DrawBoard(gameState.Chessboard);
         }
 
+        // if the game ended we call this to show game end menu and handle the buttons
         private void ShowGameEndMenu()
         {
             GameEndMenu gameEndMenu = new GameEndMenu(gameState);

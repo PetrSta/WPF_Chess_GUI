@@ -11,6 +11,7 @@ namespace Chess_UI
     {
         public event Action<MenuOptions> OptionSelected;
 
+        // constructor for the game end menu window
         public GameEndMenu(GameState gameState)
         {
             InitializeComponent();
@@ -20,6 +21,7 @@ namespace Chess_UI
             ReasonText.Text = GetReasonText(gameResult.EndState, gameState.ColorToMove);
         }
 
+        // get text to show based on the winners color
         private static string GetWinnerText(Chess_Logic.Colors winner)
         {
             return winner switch
@@ -30,6 +32,7 @@ namespace Chess_UI
             };
         }
 
+        // get text to show based on the winners color
         private static string PlayerString(Chess_Logic.Colors player)
         {
             return player switch
@@ -40,6 +43,7 @@ namespace Chess_UI
             };
         }
 
+        // get the reason why the game ended
         private static string GetReasonText(GameEndState gameEndState, Chess_Logic.Colors currentPlayer)
         {
             return gameEndState switch
@@ -53,11 +57,13 @@ namespace Chess_UI
             };
         }
 
+        // button click handler
         private void RestartClick(object sender, RoutedEventArgs e)
         {
             OptionSelected?.Invoke(MenuOptions.Restart);
         }
 
+        // button click handler
         private void ExitClick(object sender, RoutedEventArgs e)
         {
             OptionSelected?.Invoke(MenuOptions.Exit);
