@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4F608C-D844-4A3B-9E31-24B2046CE741}|Chess_UI\\Chess_UI.csproj|c:\\users\\petr\\documents\\pet_projects\\chess_gui\\chess_gui\\chess_ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3A4F608C-D844-4A3B-9E31-24B2046CE741}|Chess_UI\\Chess_UI.csproj|solutionrelative:chess_ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4F608C-D844-4A3B-9E31-24B2046CE741}|Chess_UI\\Chess_UI.csproj|c:\\users\\petr\\documents\\pet_projects\\chess_gui\\chess_gui\\chess_ui\\gameendmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3A4F608C-D844-4A3B-9E31-24B2046CE741}|Chess_UI\\Chess_UI.csproj|solutionrelative:chess_ui\\gameendmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 316,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,24 +26,12 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_UI\\App.xaml",
-              "RelativeDocumentMoniker": "Chess_UI\\App.xaml",
-              "ToolTip": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_UI\\App.xaml",
-              "RelativeToolTip": "Chess_UI\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-07T14:33:00.861Z",
-              "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 316,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,18 +40,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameEndMenu.xaml",
-              "DocumentMoniker": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_UI\\GameEndMenu.xaml",
-              "RelativeDocumentMoniker": "Chess_UI\\GameEndMenu.xaml",
-              "ToolTip": "C:\\Users\\Petr\\Documents\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_UI\\GameEndMenu.xaml",
-              "RelativeToolTip": "Chess_UI\\GameEndMenu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-07T14:33:06.785Z",
-              "EditorCaption": ""
             }
           ]
         },

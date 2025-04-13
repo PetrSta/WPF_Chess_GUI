@@ -53,6 +53,15 @@ namespace Chess_Logic
             return chessboard[square].Color != Color;
         }
 
+        // get possible promotions
+        private static IEnumerable<Move> PromotionMoves(Square startingSquare, Square endingSquare)
+        {
+            yield return new PawnPromotion(startingSquare, endingSquare, PieceEnum.Knight);
+            yield return new PawnPromotion(startingSquare, endingSquare, PieceEnum.Bishop);
+            yield return new PawnPromotion(startingSquare, endingSquare, PieceEnum.Rook);
+            yield return new PawnPromotion(startingSquare, endingSquare, PieceEnum.Queen);
+        }
+
         // possible moves without capture
         private IEnumerable<Move> ForwardMoves(Square startingSquare, Chessboard chessboard)
         {
@@ -61,13 +70,23 @@ namespace Chess_Logic
 
             if(CanPush(forwardSquare, chessboard))
             {
-                yield return new StandardMove(startingSquare, forwardSquare);
+                // check if pawn reched promotion square, color check should not be needed
+                if(forwardSquare.Row == 0 && Color == Colors.Black || forwardSquare.Row == 7 && Color == Colors.White)
+                {
+                    foreach (Move promotionMove in PromotionMoves(startingSquare, forwardSquare))
+                    { 
+                        yield return promotionMove;
+                    }
+                }
+                else
+                {
+                    yield return new StandardMove(startingSquare, forwardSquare);
+                }
 
                 // if pawn hasnt moves it can move two squares
                 Square firstPawnPush = forwardSquare + forward;
                 if(!HasMoved && CanPush(firstPawnPush, chessboard))
                 {
-                    // TODO change later
                     yield return new StandardMove(startingSquare, firstPawnPush);
                 }
             }
@@ -83,7 +102,18 @@ namespace Chess_Logic
 
                 if (CanCapture(endingSquare, chessboard))
                 {
-                    yield return new StandardMove(startingSquare, endingSquare);
+                    // check if pawn reched promotion square, color check should not be needed
+                    if (endingSquare.Row == 0 && Color == Colors.Black || endingSquare.Row == 7 && Color == Colors.White)
+                    {
+                        foreach (Move promotionMove in PromotionMoves(startingSquare, endingSquare))
+                        {
+                            yield return promotionMove;
+                        }
+                    }
+                    else
+                    {
+                        yield return new StandardMove(startingSquare, endingSquare);
+                    }
                 }
             }
         }
