@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\
 Chess_UI
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\App.xaml
-2-1927112431
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\App.xaml
+31183802819
 
-9-1273854302
-199690072681
-GameEndMenu.xaml;MainWindow.xaml;
+102025580740
+199-405544846
+GameEndMenu.xaml;MainWindow.xaml;PromotionMenu.xaml;
 
-True
+False
 

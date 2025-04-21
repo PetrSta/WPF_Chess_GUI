@@ -9,6 +9,7 @@
     
     <Border Width="275" Height="125" Style="{StaticResource BorderStyle}">
         <Grid>
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="0.5*"></RowDefinition>
@@ -28,4 +29,5 @@
 
         </Grid>
     </Border>
+    
 </UserControl>

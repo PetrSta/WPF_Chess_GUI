@@ -10,20 +10,20 @@
         Icon="Assets\Icon.ico"
         WindowStartupLocation="CenterScreen"
         Background="#101010">
+    
     <Viewbox>
         <Grid x:Name="BoardGrid" Width="800" Height="800" MouseLeftButtonDown="BoardGrid_LeftMouseDown" MouseRightButtonDown="BoardGrid_RightMouseDown">
+            
             <Grid.Background>
                 <ImageBrush ImageSource="Assets\Chessboard_W_Bottom.png"/>
             </Grid.Background>
 
-            <UniformGrid x:Name="MovesHighlightGrid" Rows="8" Columns="8" 
-                         Height="750" Width="750"/>
+            <UniformGrid x:Name="MovesHighlightGrid" Rows="8" Columns="8" Height="750" Width="750"/>
 
             <!--grid has to be sized to acount for notation-->
-            <UniformGrid x:Name="PieceGrid" Rows="8" Columns="8" 
-                         Height="750" Width="750" RenderOptions.BitmapScalingMode="HighQuality"/>
+            <UniformGrid x:Name="PieceGrid" Rows="8" Columns="8" Height="750" Width="750" RenderOptions.BitmapScalingMode="HighQuality"/>
 
-            <ContentControl x:Name="GameEndMenuContainer"></ContentControl>
+            <ContentControl x:Name="MenuContainer"></ContentControl>
             
         </Grid>
     </Viewbox>

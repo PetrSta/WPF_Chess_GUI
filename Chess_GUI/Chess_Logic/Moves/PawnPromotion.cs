@@ -12,21 +12,20 @@ namespace Chess_Logic
         public override MoveTypes MoveTypes => MoveTypes.Promotion;
         public override Square StartingSquare { get; }
         public override Square EndingSquare { get; }
-
-        private readonly PieceEnum newPieceType;
+        private readonly PieceEnum NewPieceType;
 
         // constructor
         public PawnPromotion(Square startingSquare, Square endingSquare, PieceEnum newPieceType)
         {
             StartingSquare = startingSquare;
             EndingSquare = endingSquare;
-            this.newPieceType = newPieceType;
+            this.NewPieceType = newPieceType;
         }
 
-        // 
+        // helper method to get the piece the pawn is promoted to
         private Piece CreateNewPieceType(Colors playerColor)
         {
-            return newPieceType switch
+            return NewPieceType switch
             {
                 PieceEnum.Knight => new Knight(playerColor),
                 PieceEnum.Bishop => new Bishop(playerColor),
@@ -43,7 +42,7 @@ namespace Chess_Logic
 
             Piece promotionPiece = CreateNewPieceType(pawn.Color);
             promotionPiece.HasMoved = true;
-            chessboard[StartingSquare] = promotionPiece;
+            chessboard[EndingSquare] = promotionPiece;
         }
     }
 }

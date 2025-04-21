@@ -35,7 +35,7 @@
             return HashCode.Combine(Row, Column); 
         }
 
-        // overriden operators
+        // overriden operators ( ==, != and +)
         public static bool operator ==(Square left, Square right)
         {
             return EqualityComparer<Square>.Default.Equals(left, right);

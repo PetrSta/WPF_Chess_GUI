@@ -1,5 +1,6 @@
 ﻿namespace Chess_Logic
 {
+    // TODO: castling
     // representation of king
     public class King(Colors color) : Piece
     {

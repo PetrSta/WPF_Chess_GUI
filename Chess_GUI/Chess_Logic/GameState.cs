@@ -6,14 +6,14 @@
         // the chessboard
         public Chessboard Chessboard { get; } = chessboard;
         // player / color to move a piece
-        public Colors ColorToMove { get; private set; } = color;
+        public Colors PlayerToMove { get; private set; } = color;
         // result of the game
         public GameResult GameResult { get; private set; } = null;
 
         // check if there are legcal moves and if there are get them
         public IEnumerable<Move> LegalMovesForPiece(Square startingSquare)
         {
-            if(Chessboard.IsEmpty(startingSquare) || Chessboard[startingSquare].Color != ColorToMove)
+            if(Chessboard.IsEmpty(startingSquare) || Chessboard[startingSquare].Color != PlayerToMove)
             {
                 return Enumerable.Empty<Move>();
             }
@@ -28,7 +28,7 @@
         public void MovePiece(Move selectedMove)
         {
             selectedMove.Execute(Chessboard);
-            ColorToMove = ColorToMove.getOpponent();
+            PlayerToMove = PlayerToMove.getOpponent();
             CheckGameOver();
         }
 
@@ -47,11 +47,11 @@
         // check if the game is over
         private void CheckGameOver()
         {
-            if (!AllLegalMoveForPlayer(ColorToMove).Any())
+            if (!AllLegalMoveForPlayer(PlayerToMove).Any())
             {
-                if (Chessboard.PlayersKingInCheck(ColorToMove))
+                if (Chessboard.PlayersKingInCheck(PlayerToMove))
                 {
-                    GameResult = GameResult.Win(ColorToMove.getOpponent());
+                    GameResult = GameResult.Win(PlayerToMove.getOpponent());
                 }
                 else
                 {
