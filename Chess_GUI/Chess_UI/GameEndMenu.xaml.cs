@@ -5,7 +5,7 @@ using System.Windows.Controls;
 namespace Chess_UI
 {
     /// <summary>
-    /// Interakční logika pro GameEndMenu.xaml
+    /// Interaction logic for GameEndMenu.xaml
     /// </summary>
     public partial class GameEndMenu : UserControl
     {
@@ -18,7 +18,7 @@ namespace Chess_UI
 
             GameResult gameResult = gameState.GameResult;
             WinnerText.Text = GetWinnerText(gameResult.WinningColor);
-            ReasonText.Text = GetReasonText(gameResult.EndState, gameState.ColorToMove);
+            ReasonText.Text = GetReasonText(gameResult.EndState, gameState.PlayerToMove);
         }
 
         // get text to show based on the winners color

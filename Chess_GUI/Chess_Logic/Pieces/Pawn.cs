@@ -2,6 +2,7 @@
 
 namespace Chess_Logic
 {
+    // TODO: en passant
     // representation of pawn
     public class Pawn : Piece
     {
@@ -71,7 +72,7 @@ namespace Chess_Logic
             if(CanPush(forwardSquare, chessboard))
             {
                 // check if pawn reched promotion square, color check should not be needed
-                if(forwardSquare.Row == 0 && Color == Colors.Black || forwardSquare.Row == 7 && Color == Colors.White)
+                if(forwardSquare.Row == 0 || forwardSquare.Row == 7)
                 {
                     foreach (Move promotionMove in PromotionMoves(startingSquare, forwardSquare))
                     { 
@@ -103,7 +104,7 @@ namespace Chess_Logic
                 if (CanCapture(endingSquare, chessboard))
                 {
                     // check if pawn reched promotion square, color check should not be needed
-                    if (endingSquare.Row == 0 && Color == Colors.Black || endingSquare.Row == 7 && Color == Colors.White)
+                    if (endingSquare.Row == 0 || endingSquare.Row == 7)
                     {
                         foreach (Move promotionMove in PromotionMoves(startingSquare, endingSquare))
                         {
@@ -121,7 +122,6 @@ namespace Chess_Logic
         // all possible moves
         public override IEnumerable<Move> GetMoves(Square startingSquare, Chessboard chessboard)
         {
-            // TODO pawn promotion, en passant
             return ForwardMoves(startingSquare, chessboard).Concat(CapturingMoves(startingSquare, chessboard));
         }
 

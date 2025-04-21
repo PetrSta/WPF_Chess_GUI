@@ -10,3 +10,15 @@ C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release
 C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\refint\Chess_Logic.dll
 C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\Chess_Logic.pdb
 C:\Users\Petr\Documents\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\ref\Chess_Logic.dll
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\bin\Release\net8.0\Chess_Logic.deps.json
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\bin\Release\net8.0\Chess_Logic.dll
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\bin\Release\net8.0\Chess_Logic.pdb
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\Chess_Logic.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\Chess_Logic.AssemblyInfoInputs.cache
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\Chess_Logic.AssemblyInfo.cs
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\Chess_Logic.csproj.CoreCompileInputs.cache
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\Chess_Logic.sourcelink.json
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\Chess_Logic.dll
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\refint\Chess_Logic.dll
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\Chess_Logic.pdb
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_Logic\obj\Release\net8.0\ref\Chess_Logic.dll
