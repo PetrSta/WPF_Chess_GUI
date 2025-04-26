@@ -216,7 +216,7 @@ namespace Chess_UI
                 if (possibleMovesCache.TryGetValue(square, out Move move))
                 {
                     // if the move is a pawn promotion move
-                    if (move.MoveTypes == MoveTypes.Promotion)
+                    if (move.MoveType == MoveTypes.Promotion)
                     {
                         HandlePromotion(move.StartingSquare, move.EndingSquare);
                     }

@@ -4,7 +4,7 @@
     public abstract class Move
     {
         // variables
-        public abstract MoveTypes MoveTypes { get; }
+        public abstract MoveTypes MoveType { get; }
         public abstract Square StartingSquare { get; }
         public abstract Square EndingSquare { get; }
 

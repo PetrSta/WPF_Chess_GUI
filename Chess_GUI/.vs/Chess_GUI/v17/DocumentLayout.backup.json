@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|e:\\users\\petr\\desktop\\dokumenty\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|e:\\users\\petr\\desktop\\dokumenty\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,9 +44,22 @@
               "RelativeDocumentMoniker": "Chess_Logic\\Pieces\\King.cs",
               "ToolTip": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Pieces\\King.cs",
               "RelativeToolTip": "Chess_Logic\\Pieces\\King.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:41:36.47Z",
+              "WhenOpened": "2025-04-26T08:00:27.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Castle.cs",
+              "DocumentMoniker": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Moves\\Castle.cs",
+              "RelativeDocumentMoniker": "Chess_Logic\\Moves\\Castle.cs",
+              "ToolTip": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Moves\\Castle.cs",
+              "RelativeToolTip": "Chess_Logic\\Moves\\Castle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T07:48:41.633Z",
               "EditorCaption": ""
             }
           ]

@@ -9,7 +9,7 @@ namespace Chess_Logic
 {
     public class PawnPromotion : Move
     {
-        public override MoveTypes MoveTypes => MoveTypes.Promotion;
+        public override MoveTypes MoveType => MoveTypes.Promotion;
         public override Square StartingSquare { get; }
         public override Square EndingSquare { get; }
         private readonly PieceEnum NewPieceType;

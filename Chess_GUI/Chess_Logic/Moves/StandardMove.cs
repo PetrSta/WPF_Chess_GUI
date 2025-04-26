@@ -4,7 +4,7 @@
     internal class StandardMove(Square startingSquare, Square endingSquare) : Move
     {
         // move type
-        public override MoveTypes MoveTypes => MoveTypes.Standard;
+        public override MoveTypes MoveType => MoveTypes.Standard;
         // move starting squeare
         public override Square StartingSquare { get; } = startingSquare;
         // move ending square

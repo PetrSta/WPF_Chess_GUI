@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|e:\\users\\petr\\desktop\\dokumenty\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|e:\\users\\petr\\desktop\\dokumenty\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 316,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +35,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "King.cs",
+              "DocumentMoniker": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Pieces\\King.cs",
+              "RelativeDocumentMoniker": "Chess_Logic\\Pieces\\King.cs",
+              "ToolTip": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Pieces\\King.cs",
+              "RelativeToolTip": "Chess_Logic\\Pieces\\King.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T08:00:27.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Castle.cs",
+              "DocumentMoniker": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Moves\\Castle.cs",
+              "RelativeDocumentMoniker": "Chess_Logic\\Moves\\Castle.cs",
+              "ToolTip": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Moves\\Castle.cs",
+              "RelativeToolTip": "Chess_Logic\\Moves\\Castle.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwCMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T07:48:41.633Z",
+              "EditorCaption": ""
             }
           ]
         },
