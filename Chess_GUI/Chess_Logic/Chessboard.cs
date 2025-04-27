@@ -5,6 +5,25 @@
         // array to represent board
         private readonly Piece[,] pieces = new Piece[8, 8];
 
+        // store squares which can be used for en passant move
+        private readonly Dictionary<Colors, Square> enPassantSquares = new Dictionary<Colors, Square>
+        {
+            { Colors.White, null },
+            { Colors.Black, null }
+        };
+
+        // helper method to get square on which pawn can be captured using en passant
+        public Square GetEnPassantSquare(Colors player)
+        {
+            return enPassantSquares[player];
+        }
+
+        // helper method to set square on which pawn can be captured using en passant
+        public void SetEnPassantSquare(Colors player, Square square)
+        {
+            enPassantSquares[player] = square;
+        }
+
         // get piece from array or set piece to array
         public Piece this[int row, int collumn]
         {

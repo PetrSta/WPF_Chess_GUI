@@ -86,9 +86,10 @@ namespace Chess_Logic
 
                 // if pawn hasnt moves it can move two squares
                 Square firstPawnPush = forwardSquare + forward;
+
                 if(!HasMoved && CanPush(firstPawnPush, chessboard))
                 {
-                    yield return new StandardMove(startingSquare, firstPawnPush);
+                    yield return new FirstPawnMove(startingSquare, firstPawnPush);
                 }
             }
         }
@@ -101,9 +102,15 @@ namespace Chess_Logic
                 // check for left and right capturing options
                 Square endingSquare = startingSquare + forward + direction;
 
-                if (CanCapture(endingSquare, chessboard))
+                // check for en passant capture
+                if (endingSquare == chessboard.GetEnPassantSquare(Color.getOpponent()))
                 {
-                    // check if pawn reched promotion square, color check should not be needed
+                    yield return new EnPassant(startingSquare, endingSquare);
+                }
+                // check for normal capture
+                else if (CanCapture(endingSquare, chessboard))
+                {
+                    // check if pawn reched promotion square, color check is not needed
                     if (endingSquare.Row == 0 || endingSquare.Row == 7)
                     {
                         foreach (Move promotionMove in PromotionMoves(startingSquare, endingSquare))
@@ -111,6 +118,7 @@ namespace Chess_Logic
                             yield return promotionMove;
                         }
                     }
+                    // otherwise normal move
                     else
                     {
                         yield return new StandardMove(startingSquare, endingSquare);

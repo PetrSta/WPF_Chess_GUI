@@ -112,12 +112,12 @@
 
             if (CanCastleKingSide(startingSquare, chessboard))
             {
-                yield return new Castle(MoveTypes.CastlingKingSide, startingSquare);
+                yield return new Castle(MoveTypes.CastleKingSide, startingSquare);
             } 
 
             if (CanCastleQueenSide(startingSquare, chessboard))
             {
-                yield return new Castle(MoveTypes.CastlingQueenSide, startingSquare);
+                yield return new Castle(MoveTypes.CastleQueenSide, startingSquare);
             }
         }
 

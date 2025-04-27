@@ -21,14 +21,14 @@ namespace Chess_Logic
             this.StartingSquare = kingSquare;
 
             // these variables are set based on the type of castling -> kingside/queenside
-            if (moveType == MoveTypes.CastlingKingSide) 
+            if (moveType == MoveTypes.CastleKingSide) 
             {
                 castlingDirection = Direction.Right;
                 EndingSquare = new Square(kingSquare.Row, 6);
                 rookStartingSquare = new Square(kingSquare.Row, 7);
                 rookEndingSquare = new Square(kingSquare.Row, 5);
             } 
-            else if(moveType == MoveTypes.CastlingQueenSide)
+            else if(moveType == MoveTypes.CastleQueenSide)
             {
                 castlingDirection = Direction.Left;
                 EndingSquare = new Square(kingSquare.Row, 2);

@@ -27,6 +27,8 @@
         // execute selected piece move
         public void MovePiece(Move selectedMove)
         {
+            // en passant is only possible on the next move
+            Chessboard.SetEnPassantSquare(PlayerToMove, null);
             selectedMove.Execute(Chessboard);
             PlayerToMove = PlayerToMove.getOpponent();
             CheckGameOver();

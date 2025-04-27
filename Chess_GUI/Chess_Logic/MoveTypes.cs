@@ -4,10 +4,10 @@
     public enum MoveTypes
     {
         Standard,
-        CastlingKingSide,
-        CastlingQueenSide,
-        PawnStart,
+        CastleKingSide,
+        CastleQueenSide,
+        FirstPawnMove,
         EnPassant,
-        Promotion
+        PawnPromotion
     }
 }
