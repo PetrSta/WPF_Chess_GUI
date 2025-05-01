@@ -4,6 +4,7 @@ using System.Windows.Controls;
 using Chess_Logic;
 using Rectangle = System.Windows.Shapes.Rectangle;
 using Color = System.Windows.Media.Color;
+using System.Windows.Input;
 
 namespace Chess_UI
 {
@@ -66,15 +67,10 @@ namespace Chess_UI
             DrawBoard(gameState.Chessboard);
         }
 
-        // store possible moves 
-        // TODO, in case of pawn promotion we are trying to add moves for earch square -> try to rework this logic 
-        private void StoreMoves(IEnumerable<Move> moves)
+        // check if game end menu is on screen right now
+        private bool IsMenuOnScreen()
         {
-            possibleMovesCache.Clear();
-            foreach (Move move in moves)
-            {
-                possibleMovesCache.TryAdd(move.EndingSquare, move);
-            }
+            return MenuContainer.Content != null;
         }
 
         // show possible moves highlight
@@ -84,7 +80,7 @@ namespace Chess_UI
             Color color = Color.FromArgb(135, 125, 255, 75);
 
             // for every possible move square -> use the color as fill
-            foreach (Square endingSquare in possibleMovesCache.Keys) 
+            foreach (Square endingSquare in possibleMovesCache.Keys)
             {
                 highlights[endingSquare.Row, endingSquare.Column].Fill = new SolidColorBrush(color);
             }
@@ -112,6 +108,18 @@ namespace Chess_UI
             highlightSquareCache.Clear();
         }
 
+        // restart the state of the game
+        private void RestartGame()
+        {
+            selectedSquare = null;
+            HideHighlights();
+            HideUserHighlights();
+            possibleMovesCache.Clear();
+
+            gameState = new GameState(Chess_Logic.Colors.White, Chessboard.Initialize());
+            DrawBoard(gameState.Chessboard);
+        }
+
         // get clicked square of the piece grid
         private Square ToSquarePosition(Point point)
         {
@@ -121,6 +129,74 @@ namespace Chess_UI
             int column = (int)(point.X / squareSize);
 
             return new Square(row, column);
+        }
+
+        // store possible moves 
+        // TODO, in case of pawn promotion we are trying to add moves for earch square -> try to rework this logic 
+        private void StoreMoves(IEnumerable<Move> moves)
+        {
+            possibleMovesCache.Clear();
+            foreach (Move move in moves)
+            {
+                possibleMovesCache.TryAdd(move.EndingSquare, move);
+            }
+        }
+
+        // check if the point is in piece grid -> helper function for mouse down handling
+        private bool PieceGridOutOfBounds(Point point)
+        {
+            // ignore edges of the board -> point coords can be negative or go out of bounds for piece grid,
+            // they are related to top left corner of the grid -> this can result in "out of bounds" scenario
+            double pieceGridSize = PieceGrid.ActualHeight;
+            // check for left hand side and top side of the chessboard
+            if (point.X < 0 || point.Y < 0)
+            {
+                return true;
+            }
+            // check for right hand size and bottom of the chessboard
+            if (point.X > pieceGridSize || point.Y > pieceGridSize)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        // if the game ended we call this to show game end menu and handle the buttons
+        private void ShowGameEndMenu()
+        {
+            GameEndMenu gameEndMenu = new GameEndMenu(gameState);
+            MenuContainer.Content = gameEndMenu;
+
+            // if player wants to restart the game, do so
+            gameEndMenu.OptionSelected += menuOption =>
+            {
+                if (menuOption == MenuOptions.Restart)
+                {
+                    MenuContainer.Content = null;
+                    RestartGame();
+                }
+                else
+                {
+                    Application.Current.Shutdown();
+                }
+            };
+        }
+
+        private void ShowPauseMenu()
+        {
+            PauseMenu pauseMenu = new PauseMenu();
+            MenuContainer.Content = pauseMenu;
+
+            pauseMenu.OptionSelected += menuOption =>
+            {
+                MenuContainer.Content = null;
+
+                if (menuOption == MenuOptions.Restart)
+                {
+                    RestartGame();
+                }
+            };
         }
 
         // check if square has piece and if so show possible moves
@@ -137,7 +213,6 @@ namespace Chess_UI
                 ShowHighlights();
             }
         }
-
 
         // move the piece
         private void HandleMove(Move move)
@@ -234,30 +309,19 @@ namespace Chess_UI
             }
         }
 
-        // check if the point is in piece grid -> helper function for mouse down handling
-        private bool PieceGridOutOfBounds(Point point)
+        // evene handling - KeyDown - pause menu
+        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
         {
-            // ignore edges of the board -> point coords can be negative or go out of bounds for piece grid,
-            // they are related to top left corner of the grid -> this can result in "out of bounds" scenario
-            double pieceGridSize = PieceGrid.ActualHeight;
-            // check for left hand side and top side of the chessboard
-            if (point.X < 0 || point.Y < 0)
+            if (!IsMenuOnScreen() && e.Key == Key.Escape)
             {
-                return true;
+                ShowPauseMenu();
             }
-            // check for right hand size and bottom of the chessboard
-            if (point.X > pieceGridSize || point.Y > pieceGridSize)
-            {
-                return true;
-            }
-
-            return false;
         }
 
         // event handling - mouseLeftDown   
-        private void BoardGrid_LeftMouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private void BoardGrid_LeftMouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (IsGameEndMenuOnScreen())
+            if (IsMenuOnScreen())
             {
                 return;
             }
@@ -287,9 +351,9 @@ namespace Chess_UI
         }
 
         // event handling - mouseRightDown - highlighting
-        private void BoardGrid_RightMouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private void BoardGrid_RightMouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (IsGameEndMenuOnScreen())
+            if (IsMenuOnScreen())
             {
                 return;
             }
@@ -307,44 +371,6 @@ namespace Chess_UI
             Square squareToHiglight = ToSquarePosition(point);
 
             HandleHighlithgtInput(squareToHiglight);
-        }
-
-        // check if game end menu is on screen right now
-        private bool IsGameEndMenuOnScreen()
-        {
-            return MenuContainer.Content != null;
-        }
-
-        // restart the state of the game
-        private void RestartGame()
-        {
-            HideHighlights();
-            HideUserHighlights();
-            possibleMovesCache.Clear();
-
-            gameState = new GameState(Chess_Logic.Colors.White, Chessboard.Initialize());
-            DrawBoard(gameState.Chessboard);
-        }
-
-        // if the game ended we call this to show game end menu and handle the buttons
-        private void ShowGameEndMenu()
-        {
-            GameEndMenu gameEndMenu = new GameEndMenu(gameState);
-            MenuContainer.Content = gameEndMenu;
-
-            // if player wants to restart the game, do so
-            gameEndMenu.OptionSelected += menuOption =>
-            {
-                if (menuOption == MenuOptions.Restart)
-                {
-                    MenuContainer.Content = null;
-                    RestartGame();
-                }
-                else
-                {
-                    Application.Current.Shutdown();
-                }
-            };
         }
     }
 }

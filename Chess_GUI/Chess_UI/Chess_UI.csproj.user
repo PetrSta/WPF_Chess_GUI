@@ -10,6 +10,9 @@
     <Compile Update="GameEndMenu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PauseMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PromotionMenu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

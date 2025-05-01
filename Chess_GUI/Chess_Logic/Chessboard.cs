@@ -12,16 +12,28 @@
             { Colors.Black, null }
         };
 
-        // helper method to get square on which pawn can be captured using en passant
-        public Square GetEnPassantSquare(Colors player)
+        // check if square is in bounds of 8 x 8 chessboard
+        public static bool IsInBounds(Square square)
         {
-            return enPassantSquares[player];
+            return square.Row >= 0 && square.Row <= 7 && square.Column >= 0 && square.Column <= 7;
+        }
+
+        // check if square on chessboard is empty
+        public bool IsEmpty(Square square)
+        {
+            return this[square] == null;
         }
 
         // helper method to set square on which pawn can be captured using en passant
         public void SetEnPassantSquare(Colors player, Square square)
         {
             enPassantSquares[player] = square;
+        }
+
+        // helper method to get square on which pawn can be captured using en passant
+        public Square GetEnPassantSquare(Colors player)
+        {
+            return enPassantSquares[player];
         }
 
         // get piece from array or set piece to array
@@ -69,26 +81,6 @@
             }
         }
 
-        // initialize function for chessboard -> starting position
-        public static Chessboard Initialize()
-        {
-            Chessboard chessboard = new Chessboard();
-            chessboard.StartingPosition();
-            return chessboard;
-        }
-
-        // check if square is in bounds of 8 x 8 chessboard
-        public static bool IsInBounds(Square square)
-        {
-            return square.Row >= 0 && square.Row <= 7 && square.Column >= 0 && square.Column <= 7;
-        }
-
-        // check if square on chessboard is empty
-        public bool IsEmpty(Square square)
-        { 
-            return this[square] == null;
-        }
-
         // return all squares with piece on them
         public IEnumerable<Square> SquaresWithPiece()
         {
@@ -133,6 +125,14 @@
             }
 
             return chessboardCopy;
+        }
+
+        // initialize function for chessboard -> starting position
+        public static Chessboard Initialize()
+        {
+            Chessboard chessboard = new Chessboard();
+            chessboard.StartingPosition();
+            return chessboard;
         }
     }
 }

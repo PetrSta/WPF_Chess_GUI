@@ -58,3 +58,5 @@ E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Re
 E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\Chess_UI.pdb
 E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\Chess_UI.genruntimeconfig.cache
 E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\ref\Chess_UI.dll
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\PauseMenu.g.cs
+E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\obj\Release\net8.0-windows\PauseMenu.baml

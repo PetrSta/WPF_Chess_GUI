@@ -10,40 +10,10 @@
         // result of the game
         public GameResult GameResult { get; private set; } = null;
 
-        // check if there are legcal moves and if there are get them
-        public IEnumerable<Move> LegalMovesForPiece(Square startingSquare)
+        // check if game is over
+        public bool GameOver()
         {
-            if(Chessboard.IsEmpty(startingSquare) || Chessboard[startingSquare].Color != PlayerToMove)
-            {
-                return Enumerable.Empty<Move>();
-            }
-
-            Piece piece = Chessboard[startingSquare];
-
-            IEnumerable<Move> potentialMoves = piece.GetMoves(startingSquare, Chessboard);
-            return potentialMoves.Where(move => move.LegalMove(Chessboard));
-        }
-
-        // execute selected piece move
-        public void MovePiece(Move selectedMove)
-        {
-            // en passant is only possible on the next move
-            Chessboard.SetEnPassantSquare(PlayerToMove, null);
-            selectedMove.Execute(Chessboard);
-            PlayerToMove = PlayerToMove.getOpponent();
-            CheckGameOver();
-        }
-
-        // find all legal moves for player
-        public IEnumerable<Move> AllLegalMoveForPlayer(Colors color)
-        {
-            IEnumerable<Move> potentialMoves = Chessboard.SquaresWithPiecesOfColor(color).SelectMany(pos =>
-            {
-                Piece piece = Chessboard[pos];
-                return piece.GetMoves(pos, Chessboard);
-            });
-
-            return potentialMoves.Where(move => move.LegalMove(Chessboard));
+            return GameResult != null;
         }
 
         // check if the game is over
@@ -62,10 +32,40 @@
             }
         }
 
-        // check if game is over
-        public bool GameOver()
+        // check if there are legcal moves and if there are get them
+        public IEnumerable<Move> LegalMovesForPiece(Square startingSquare)
         {
-            return GameResult != null;
+            if(Chessboard.IsEmpty(startingSquare) || Chessboard[startingSquare].Color != PlayerToMove)
+            {
+                return Enumerable.Empty<Move>();
+            }
+
+            Piece piece = Chessboard[startingSquare];
+
+            IEnumerable<Move> potentialMoves = piece.GetMoves(startingSquare, Chessboard);
+            return potentialMoves.Where(move => move.LegalMove(Chessboard));
+        }
+
+        // find all legal moves for player
+        public IEnumerable<Move> AllLegalMoveForPlayer(Colors color)
+        {
+            IEnumerable<Move> potentialMoves = Chessboard.SquaresWithPiecesOfColor(color).SelectMany(pos =>
+            {
+                Piece piece = Chessboard[pos];
+                return piece.GetMoves(pos, Chessboard);
+            });
+
+            return potentialMoves.Where(move => move.LegalMove(Chessboard));
+        }
+
+        // execute selected piece move
+        public void MovePiece(Move selectedMove)
+        {
+            // en passant is only possible on the next move
+            Chessboard.SetEnPassantSquare(PlayerToMove, null);
+            selectedMove.Execute(Chessboard);
+            PlayerToMove = PlayerToMove.getOpponent();
+            CheckGameOver();
         }
     }  
 }

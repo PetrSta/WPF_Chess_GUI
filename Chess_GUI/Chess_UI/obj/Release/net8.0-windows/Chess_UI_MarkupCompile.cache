@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
 E:\Users\Petr\Desktop\Dokumenty\Pet_projects\Chess_GUI\Chess_GUI\Chess_UI\App.xaml
-31183802819
+4-1445197265
 
-897078992
+9686566051
 199-405544846
-GameEndMenu.xaml;MainWindow.xaml;PromotionMenu.xaml;
+GameEndMenu.xaml;MainWindow.xaml;PauseMenu.xaml;PromotionMenu.xaml;
 
 False
 
