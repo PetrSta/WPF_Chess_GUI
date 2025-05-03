@@ -25,14 +25,14 @@
         private static bool DidRookMove(Square square, Chessboard chessboard)
         {
             // if square is empty the rook had to move / be captured
-            if (square == null)
+            if (chessboard[square] == null)
             {
                 return false;
             }
 
             // we do not need to check the color of the rook, if the rook would be different color it had to move there
-            Piece piece = chessboard[square];
-            return piece.PieceType == PieceEnum.Rook && !piece.HasMoved;
+            Piece rook = chessboard[square];
+            return rook.PieceType == PieceEnum.Rook && !rook.HasMoved;
         }
 
         // helper method that helps us to make sure all squares between king and rook are empty

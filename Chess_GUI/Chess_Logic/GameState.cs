@@ -19,6 +19,7 @@
         // check if the game is over
         private void CheckGameOver()
         {
+            // if there are no possible moves
             if (!AllLegalMoveForPlayer(PlayerToMove).Any())
             {
                 if (Chessboard.PlayersKingInCheck(PlayerToMove))
@@ -29,6 +30,11 @@
                 {
                     GameResult = GameResult.Draw(GameEndState.Stalemate);
                 }
+            }
+            // if there is insufficent material
+            else if(Chessboard.InsufficentMaterial())
+            {
+                GameResult = GameResult.Draw(GameEndState.InsufficentMaterial);
             }
         }
 

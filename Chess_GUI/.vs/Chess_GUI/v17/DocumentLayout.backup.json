@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A4F608C-D844-4A3B-9E31-24B2046CE741}|Chess_UI\\Chess_UI.csproj|e:\\users\\petr\\desktop\\dokumenty\\pet_projects\\chess_gui\\chess_gui\\chess_ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4F608C-D844-4A3B-9E31-24B2046CE741}|Chess_UI\\Chess_UI.csproj|solutionrelative:chess_ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|e:\\users\\petr\\desktop\\dokumenty\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|e:\\users\\petr\\desktop\\dokumenty\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|e:\\users\\petr\\desktop\\dokumenty\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\piececounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\piececounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|e:\\users\\petr\\desktop\\dokumenty\\pet_projects\\chess_gui\\chess_gui\\chess_logic\\chessboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EECFC681-3106-4185-BE34-C167CA8123AF}|Chess_Logic\\Chess_Logic.csproj|solutionrelative:chess_logic\\chessboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 316,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "King.cs",
+              "DocumentMoniker": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Pieces\\King.cs",
+              "RelativeDocumentMoniker": "Chess_Logic\\Pieces\\King.cs",
+              "ToolTip": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Pieces\\King.cs",
+              "RelativeToolTip": "Chess_Logic\\Pieces\\King.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAIAwwCIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T20:00:30.667Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -34,15 +59,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_UI\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Chess_UI\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_UI\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Chess_UI\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAC4BAAAAAAAAAAAgwDYBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GameState.cs",
+              "DocumentMoniker": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\GameState.cs",
+              "RelativeDocumentMoniker": "Chess_Logic\\GameState.cs",
+              "ToolTip": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\GameState.cs",
+              "RelativeToolTip": "Chess_Logic\\GameState.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T08:31:07.029Z",
+              "WhenOpened": "2025-05-03T19:58:08.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Chessboard.cs",
+              "DocumentMoniker": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Chessboard.cs",
+              "RelativeDocumentMoniker": "Chess_Logic\\Chessboard.cs",
+              "ToolTip": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\Chessboard.cs",
+              "RelativeToolTip": "Chess_Logic\\Chessboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T19:06:26.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PieceCounter.cs",
+              "DocumentMoniker": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\PieceCounter.cs",
+              "RelativeDocumentMoniker": "Chess_Logic\\PieceCounter.cs",
+              "ToolTip": "E:\\Users\\Petr\\Desktop\\Dokumenty\\Pet_projects\\Chess_GUI\\Chess_GUI\\Chess_Logic\\PieceCounter.cs",
+              "RelativeToolTip": "Chess_Logic\\PieceCounter.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T18:48:45.705Z",
               "EditorCaption": ""
             }
           ]
