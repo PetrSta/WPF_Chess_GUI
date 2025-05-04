@@ -4,6 +4,7 @@ using System.Windows.Media.Imaging;
 
 namespace Chess_UI
 {
+    // helper method used to load piece images
     public static class PieceImages
     {
         // relative paths to white piece assets

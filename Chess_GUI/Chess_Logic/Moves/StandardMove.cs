@@ -11,12 +11,19 @@
         public override Square EndingSquare { get; } = endingSquare;
 
         // execute standard move
-        public override void Execute(Chessboard chessboard)
+        public override bool Execute(Chessboard chessboard)
         {
+            // get the piece we are moving
             Piece piece = chessboard[StartingSquare];
+            // check if the move captures
+            bool captures = !chessboard.IsEmpty(EndingSquare);
+            // move the piece to the new square
             chessboard[EndingSquare] = piece;
             chessboard[StartingSquare] = null;
             piece.HasMoved = true;
+
+            // if the move captures or moves a pawn it progresses the game
+            return captures || piece.PieceType == PieceEnum.Pawn;
         }
     }
 }

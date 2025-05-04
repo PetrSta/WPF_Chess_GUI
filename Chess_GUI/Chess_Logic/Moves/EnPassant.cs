@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-// representing en passant move
-namespace Chess_Logic
+﻿namespace Chess_Logic
 {
+    // representing en passant move
     public class EnPassant : Move
     {
         // variables
@@ -25,12 +19,15 @@ namespace Chess_Logic
         }
 
         // override the standard move execution
-        public override void Execute(Chessboard chessboard)
+        public override bool Execute(Chessboard chessboard)
         {
             // move our pawn
             new StandardMove(StartingSquare, EndingSquare).Execute(chessboard);
             // capture opponents pawn
             chessboard[capturedPawnSquare] = null;
+
+            // moving a pawn progresses game
+            return true;
         }
     }
 }

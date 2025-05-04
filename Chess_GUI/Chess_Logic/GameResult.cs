@@ -1,5 +1,6 @@
 ﻿namespace Chess_Logic
 {
+    // respresent end state of game result
     public class GameResult
     {
         // color of winning pieces

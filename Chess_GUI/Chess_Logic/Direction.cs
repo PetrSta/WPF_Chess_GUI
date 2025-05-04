@@ -1,5 +1,6 @@
 ﻿namespace Chess_Logic
 {
+    // representing possible move directions
     public class Direction(int rowDelta, int columnDelta)
     {
         // row or column movement directions

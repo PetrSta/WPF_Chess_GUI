@@ -9,11 +9,22 @@
         public Colors PlayerToMove { get; private set; } = color;
         // result of the game
         public GameResult GameResult { get; private set; } = null;
+        // counter for 50 move rule
+        private int fiftyMoveRuleCounter = 0;
 
         // check if game is over
         public bool GameOver()
         {
             return GameResult != null;
+        }
+
+        // helper method for FiftyMoveRule
+        private bool FiftyMoveRule()
+        {
+            // full moves -> both player moving a piece -> division is not needed
+            // but it is better representation
+            int fullMoves = fiftyMoveRuleCounter / 2;
+            return fullMoves == 50;
         }
 
         // check if the game is over
@@ -32,9 +43,14 @@
                 }
             }
             // if there is insufficent material
-            else if(Chessboard.InsufficentMaterial())
+            else if (Chessboard.InsufficentMaterial())
             {
                 GameResult = GameResult.Draw(GameEndState.InsufficentMaterial);
+            } 
+            // check for fity move rule
+            else if (FiftyMoveRule())
+            {
+                GameResult = GameResult.Draw(GameEndState.FiftyMoveRule);
             }
         }
 
@@ -69,8 +85,24 @@
         {
             // en passant is only possible on the next move
             Chessboard.SetEnPassantSquare(PlayerToMove, null);
-            selectedMove.Execute(Chessboard);
+            // execute the given move
+            bool progressesGame = selectedMove.Execute(Chessboard);
+
+            // check if we "progress" the game -> moving pawn or capturing piece
+            // if not increment fifty move rule counter
+            if (!progressesGame) 
+            { 
+                fiftyMoveRuleCounter++;
+            } 
+            // otherwise reset it
+            else
+            {
+                fiftyMoveRuleCounter = 0;
+            }
+
+            // change which player is next to move
             PlayerToMove = PlayerToMove.getOpponent();
+            // check for game over states
             CheckGameOver();
         }
     }  

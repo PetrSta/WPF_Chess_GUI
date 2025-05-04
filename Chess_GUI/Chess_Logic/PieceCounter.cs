@@ -1,6 +1,6 @@
-﻿// represents counter for pieces
-namespace Chess_Logic
+﻿namespace Chess_Logic
 {
+    // represents counter for pieces
     public class PieceCounter
     {
         // stores the counter for each piece type for white

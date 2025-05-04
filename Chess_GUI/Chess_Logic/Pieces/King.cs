@@ -25,7 +25,7 @@
         private static bool DidRookMove(Square square, Chessboard chessboard)
         {
             // if square is empty the rook had to move / be captured
-            if (chessboard[square] == null)
+            if (chessboard.IsEmpty(square))
             {
                 return false;
             }
@@ -87,10 +87,12 @@
         // get list of possible squares
         private IEnumerable<Square> PossibleSquares(Square startingSquare, Chessboard chessboard)
         {
+            // get all possible moves
             foreach (Direction direction in directions)
             {
                 Square endingSquare = startingSquare + direction;
 
+                // check if possible move is valid
                 if (!Chessboard.IsInBounds(endingSquare))
                 {
                     continue;
@@ -105,16 +107,17 @@
         // get valid moves
         public override IEnumerable<Move> GetMoves(Square startingSquare, Chessboard chessboard)
         {
+            // add all possible moves
             foreach (Square endingSquare in PossibleSquares(startingSquare, chessboard)) 
             { 
                 yield return new StandardMove(startingSquare, endingSquare);
             }
-
+            // if possible add kingside castle
             if (CanCastleKingSide(startingSquare, chessboard))
             {
                 yield return new Castle(MoveTypes.CastleKingSide, startingSquare);
-            } 
-
+            }
+            // if possible add queenside castle
             if (CanCastleQueenSide(startingSquare, chessboard))
             {
                 yield return new Castle(MoveTypes.CastleQueenSide, startingSquare);

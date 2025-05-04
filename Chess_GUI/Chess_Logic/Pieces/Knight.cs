@@ -17,11 +17,13 @@
             return copy;
         }
 
-        // get potential square to move to
+        // get potential square to move to -> knight has specific move pattern
         private static IEnumerable<Square> PotentialSquares(Square startingSquare)
         {
+            // check for possible moves
             foreach (Direction verticalDirection in new Direction[] { Direction.Up, Direction.Down })
             {
+                // for both up and down direction create the knight move pattern
                 foreach (Direction horizontalDirection in new Direction[] { Direction.Left, Direction.Right })
                 {
                     yield return startingSquare + 2 * verticalDirection + horizontalDirection;

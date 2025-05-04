@@ -1,6 +1,6 @@
-﻿// representing both kingside and queenside castle
-namespace Chess_Logic
+﻿namespace Chess_Logic
 {
+    // representing both kingside and queenside castle
     internal class Castle : Move
     {
         // variables for the king starting and ending square
@@ -38,10 +38,13 @@ namespace Chess_Logic
         }
 
         // we can execute castling as two separate moves -> one for king and one for the rook
-        public override void Execute(Chessboard chessboard)
+        public override bool Execute(Chessboard chessboard)
         {
             new StandardMove(StartingSquare, EndingSquare).Execute(chessboard);
             new StandardMove(rookStartingSquare, rookEndingSquare).Execute(chessboard);
+
+            // does not progress the game (capturing or moving a pawn)
+            return false;
         }
 
         // since castling is more complex move we need to create its own method to check if its legal,
@@ -56,7 +59,7 @@ namespace Chess_Logic
                 return false;
             }
 
-            // check if we would castle into / through check
+            // check if we would castle into / through check on a copy of the chessboard
             Chessboard chessboardCopy = chessboard.Copy();
             Square kingsPositionInCopy = StartingSquare;
 
@@ -65,6 +68,7 @@ namespace Chess_Logic
                 new StandardMove(kingsPositionInCopy, kingsPositionInCopy + castlingDirection).Execute(chessboardCopy);
                 kingsPositionInCopy += castlingDirection;
 
+                // if we would be in check after this move -> we would castle through it or into it
                 if(chessboardCopy.PlayersKingInCheck(player))
                 {
                     return false;

@@ -111,11 +111,13 @@ namespace Chess_UI
         // restart the state of the game
         private void RestartGame()
         {
+            // clear everything
             selectedSquare = null;
             HideHighlights();
             HideUserHighlights();
             possibleMovesCache.Clear();
 
+            // create new chessboard
             gameState = new GameState(Chess_Logic.Colors.White, Chessboard.Initialize());
             DrawBoard(gameState.Chessboard);
         }
@@ -183,11 +185,13 @@ namespace Chess_UI
             };
         }
 
+        // create and show pause menu
         private void ShowPauseMenu()
         {
             PauseMenu pauseMenu = new PauseMenu();
             MenuContainer.Content = pauseMenu;
 
+            // if player wants to restart the game do so
             pauseMenu.OptionSelected += menuOption =>
             {
                 MenuContainer.Content = null;

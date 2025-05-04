@@ -1,8 +1,5 @@
-﻿using System.Drawing;
-
-namespace Chess_Logic
+﻿namespace Chess_Logic
 {
-    // TODO: en passant
     // representation of pawn
     public class Pawn : Piece
     {
@@ -71,7 +68,7 @@ namespace Chess_Logic
 
             if(CanPush(forwardSquare, chessboard))
             {
-                // check if pawn reched promotion square, color check should not be needed
+                // check if pawn reched promotion square, color check should not be needed since pawns cannot move backwards
                 if(forwardSquare.Row == 0 || forwardSquare.Row == 7)
                 {
                     foreach (Move promotionMove in PromotionMoves(startingSquare, forwardSquare))
@@ -79,12 +76,13 @@ namespace Chess_Logic
                         yield return promotionMove;
                     }
                 }
+                // otherwise standard pawn move
                 else
                 {
                     yield return new StandardMove(startingSquare, forwardSquare);
                 }
 
-                // if pawn hasnt moves it can move two squares
+                // if pawn has not moved it can move two squares
                 Square firstPawnPush = forwardSquare + forward;
 
                 if(!HasMoved && CanPush(firstPawnPush, chessboard))
@@ -118,7 +116,7 @@ namespace Chess_Logic
                             yield return promotionMove;
                         }
                     }
-                    // otherwise normal move
+                    // otherwise standard pawn capturing move
                     else
                     {
                         yield return new StandardMove(startingSquare, endingSquare);

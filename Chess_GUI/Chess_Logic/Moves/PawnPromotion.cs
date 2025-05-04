@@ -36,14 +36,20 @@ namespace Chess_Logic
         }
 
         // transform the pawn into the new piece
-        public override void Execute(Chessboard chessboard)
+        public override bool Execute(Chessboard chessboard)
         {
+            // get the pawn and remove it from its current square
             Piece pawn = chessboard[StartingSquare];
             chessboard[StartingSquare] = null;
 
+            // create a piece which pawn will promote to
             Piece promotionPiece = CreateNewPieceType(pawn.Color);
             promotionPiece.HasMoved = true;
+            // place it on the promotion square
             chessboard[EndingSquare] = promotionPiece;
+
+            // moving a pawn progresses game
+            return true;
         }
     }
 }

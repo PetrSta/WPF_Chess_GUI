@@ -1,5 +1,6 @@
 ﻿namespace Chess_Logic
 {
+    // representing square on chessboard
     public class Square(int row, int column)
     {
         // [0,0] -> top left corner

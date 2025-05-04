@@ -1,6 +1,6 @@
-﻿// represention first pawn move (the only move pawn can move 2 squares)
-namespace Chess_Logic
+﻿namespace Chess_Logic
 {
+    // represention first pawn move (the only move pawn can move 2 squares)
     public class FirstPawnMove : Move
     {
         // variables
@@ -20,13 +20,16 @@ namespace Chess_Logic
         }
 
         // override the standard move execution
-        public override void Execute(Chessboard chessboard)
+        public override bool Execute(Chessboard chessboard)
         {
             // set the square for potential enPassantMove
             Colors player = chessboard[StartingSquare].Color;
             chessboard.SetEnPassantSquare(player, enPassantSquare);
             // move our pawn
             new StandardMove(StartingSquare, EndingSquare).Execute(chessboard);
+
+            // moving a pawn progresses game
+            return true;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿namespace Chess_Logic
 {
+    // chessboard representation
     public class Chessboard
     {
         // array to represent board
@@ -142,6 +143,7 @@
             return pieceCounter;
         }
 
+        // helper method for KingsAndSameColorBishops
         private Square FindPiece(Colors player, PieceEnum pieceType)
         {
             return SquaresWithPiecesOfColor(player).First(square => this[square].PieceType == pieceType);
@@ -175,9 +177,11 @@
                 return false;
             }
 
+            // get the square for both bishops
             Square whiteBishopSquare = FindPiece(Colors.White, PieceEnum.Bishop);
             Square blackBishopSquare = FindPiece(Colors.Black, PieceEnum.Bishop);
 
+            // if the bishops are on the same color checkmate can never occur
             return whiteBishopSquare.SquareColor() == blackBishopSquare.SquareColor();
         }
 
