@@ -201,6 +201,92 @@
             return false;
         }
 
+        // helper method KingsideCastlingRights() and QueensideCastlingRights()
+        private bool IsCastlingPotentionalyPossible(Square kingSquare, Square rookSquare)
+        {
+            // if the squares are empty, castling is not possible
+            if(IsEmpty(kingSquare) || IsEmpty(rookSquare))
+            {
+                return false;
+            }
+
+            Piece king = this[kingSquare];
+            Piece rook = this[rookSquare];
+
+            // checing piece type is not necessary since only king and rook can be on their squares without moving
+            return king.PieceType == PieceEnum.King && rook.PieceType == PieceEnum.Rook && !king.HasMoved && !rook.HasMoved;
+        }
+
+        // helper method for threefold repetition -> check castling right for king side
+        public bool KingsideCastlingRights(Colors player)
+        {
+            return player switch
+            {
+                Colors.White => IsCastlingPotentionalyPossible(new Square(7, 4), new Square(7, 7)),
+                Colors.Black => IsCastlingPotentionalyPossible(new Square(0, 4), new Square(0, 7)),
+                _ => false
+            };
+        }
+
+        // another helper method for threefold repetition -> check castling right for queen side
+        public bool QueensideCastlingRights(Colors player)
+        {
+            return player switch
+            {
+                Colors.White => IsCastlingPotentionalyPossible(new Square(7, 4), new Square(7, 0)),
+                Colors.Black => IsCastlingPotentionalyPossible(new Square(0, 4), new Square(0, 0)),
+                _ => false
+            };
+        }
+
+        // helper method for EnPassantPossible()
+        private bool IsPawnOnSquareForEnPassant(Colors player, Square[] pawnSquare, Square enPassantSquare)
+        {
+            // check each square
+            foreach (Square square in pawnSquare.Where(IsInBounds)) 
+            {
+                // if there is not piece or it is wrong color or is not a pawn -> skip
+                Piece piece = this[square];
+                if (piece == null || piece.Color != player || piece.PieceType != PieceEnum.Pawn)
+                {
+                    continue;
+                }
+
+                // otherwise check if enPassant is legal
+                EnPassant enPassantMove = new EnPassant(square, enPassantSquare);
+                if(enPassantMove.LegalMove(this))
+                {
+                    return true;
+                }
+            }
+            // if no legal enPassant move is legal
+            return false;
+        }
+
+        // another helper method for threefold repetition -> check if en passant is possible
+        public bool EnPassantPossible(Colors player)
+        {
+            Square enPassantSquare = GetEnPassantSquare(player.getOpponent());
+
+            // if no possible enPassant square exists
+            if(enPassantSquare == null)
+            {
+                return false;
+            }
+
+            // get squares for which pawn could possibly capture enPassant
+            Square[] pawnSquares = player switch
+            {
+                Colors.White => new Square[] { enPassantSquare + Direction.DownLeft, enPassantSquare + Direction.DownRight },
+                Colors.Black => new Square[] { enPassantSquare + Direction.UpLeft, enPassantSquare + Direction.UpRight },
+                _ => Array.Empty<Square>()
+            };
+
+            // check for legal enPassant moves
+            return IsPawnOnSquareForEnPassant(player, pawnSquares, enPassantSquare);
+        }
+
+
         // initialize function for chessboard -> starting position
         public static Chessboard Initialize()
         {
